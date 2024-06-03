@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectItem from "./Projectitem";
-import propertyImg from "../assets/odoo_payroll.png";
-import property2Img from "../assets/payroll_system.png";
+import odooPayroll from "../assets/odoo_payroll.png";
+import reactPayroll from "../assets/payroll_system.png";
 import property3Img from "../assets/react.svg";
 import property4Img from "../assets/react.svg";
 
@@ -18,13 +18,13 @@ const Projects = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-12">
         <ProjectItem
-          img={propertyImg}
+          img={odooPayroll}
           title="Payroll Backend"
           stack="Python, Odoo"
         />
         <ProjectItem
-          img={property2Img}
-          title="Payroll Frontend"
+          img={reactPayroll}
+          title="Hr & Payroll Frontend"
           stack="React, NextJs, NodeJs"
         />
         <ProjectItem img={property3Img} title="Project 3" />
