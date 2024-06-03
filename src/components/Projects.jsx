@@ -1,9 +1,9 @@
 import React from "react";
-import ProjectItem from "./Projectitem";
+import ProjectItem from "./ProjectItem";
 import odooPayroll from "../assets/odoo_payroll.png";
 import reactPayroll from "../assets/payroll_system.png";
-import object_rec from "../assets/object_rec.png";
 import property4Img from "../assets/react.svg";
+import object_rec from "../assets/object_rec.png";
 
 const Projects = () => {
   return (
@@ -27,8 +27,12 @@ const Projects = () => {
           title="Hr & Payroll Frontend"
           stack="React, NextJs, NodeJs"
         />
-        <ProjectItem img={object_rec} title="Project 3" />
-        <ProjectItem img={property4Img} title="Project 4" />
+        <ProjectItem img={object_rec} title="Booking System Integration" stack={"PHP, IOT, Javascript, JQuery"} />
+        <ProjectItem
+          img={object_rec}
+          title="Object Recognition"
+          stack="Python, YoloV5, Pytorch, Tensorflow"
+        />
       </div>
     </div>
   );

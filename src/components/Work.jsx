@@ -1,5 +1,5 @@
 import React from "react";
-import WorkItem from "./Workitem";
+import WorkItem from "./WorkItem";
 
 const data = [
   {
