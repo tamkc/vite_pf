@@ -10,6 +10,7 @@ import { BsPerson } from "react-icons/bs";
 
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
+
   const handleNav = () => {
     setNav(!nav);
   };
@@ -17,15 +18,19 @@ const Sidenav = () => {
   return (
     <div>
       <AiOutlineMenu
-        className="absolute top-4 right-4 z-[99] md:hidden"
+        className="fixed top-4 right-4 z-[99] md:hidden"
         onClick={handleNav}
       />
 
       {nav ? (
-        <div className="fixed w-full h-screen bg-white/80 flex flex-col justify-center items-center z-20">
+        <div
+          id="menu"
+          className="fixed w-full h-screen bg-white/80 flex flex-col justify-center items-center z-20"
+        >
           <a
             href="#main"
             className="w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-lg"
+            onClick={handleNav}
           >
             <AiOutlineHome size={25} />
             <span className="pl-4">Home</span>
@@ -33,6 +38,7 @@ const Sidenav = () => {
           <a
             href="#work"
             className="w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-lg"
+            onClick={handleNav}
           >
             <GrProjects size={25} />
             <span className="pl-4">Work</span>
@@ -40,13 +46,15 @@ const Sidenav = () => {
           <a
             href="#projects"
             className="w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-lg"
+            onClick={handleNav}
           >
             <AiOutlineProject size={25} />
             <span className="pl-4">Project</span>
           </a>
           <a
-            href="#main"
+            href="#work"
             className="w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-lg"
+            onClick={handleNav}
           >
             <BsPerson size={25} />
             <span className="pl-4">Resume</span>
@@ -54,13 +62,14 @@ const Sidenav = () => {
           <a
             href="#contact"
             className="w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-lg"
+            onClick={handleNav}
           >
             <AiOutlineMail size={25} />
             <span className="pl-4">Contact</span>
           </a>
         </div>
       ) : (
-        <div />
+        ""
       )}
 
       <div className="md:block hidden fixed top-[25%] z-10">
