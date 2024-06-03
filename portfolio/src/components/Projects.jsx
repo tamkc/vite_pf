@@ -16,7 +16,7 @@ const Projects = () => {
         consequatur quis?
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-12">
+      <div className="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-12">
         <ProjectItem
           img={propertyImg}
           title="Payroll Backend"
