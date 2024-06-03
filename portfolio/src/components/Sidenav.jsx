@@ -23,11 +23,11 @@ const Sidenav = () => {
                             <AiOutlineHome size={25} />
                             <span className='pl-4'>Home</span>
                         </a>
-                        <a href="#main" className='w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <a href="#work" className='w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
                             <GrProjects size={25} />
                             <span className='pl-4'>Work</span>
                         </a>
-                        <a href="#main" className='w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <a href="#projects" className='w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
                             <AiOutlineProject size={25} />
                             <span className='pl-4'>Project</span>
                         </a>
@@ -35,7 +35,7 @@ const Sidenav = () => {
                             <BsPerson size={25} />
                             <span className='pl-4'>Resume</span>
                         </a>
-                        <a href="#main" className='w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <a href="#contact" className='w-[70%] overflow-hidden flex justify-center items-center rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
                             <AiOutlineMail size={25} />
                             <span className='pl-4'>Contact</span>
                         </a>
@@ -44,8 +44,25 @@ const Sidenav = () => {
                     <div />
             }
 
-
-
+            <div className='md:block hidden fixed top-[25%] z-10'>
+                <div className='flex flex-col'>
+                    <a href="#main" className='rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <AiOutlineHome size={25} />
+                    </a>
+                    <a href="#work" className='rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <GrProjects size={25} />
+                    </a>
+                    <a href="#projects" className='rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <AiOutlineProject size={25} />
+                    </a>
+                    <a href="#main" className='rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <BsPerson size={25} />
+                    </a>
+                    <a href="#contact" className='rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md'>
+                        <AiOutlineMail size={25} />
+                    </a>
+                </div>
+            </div>
         </div>
     )
 }
