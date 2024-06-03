@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const WorkItem = ({ key, year, title, role, duration, details, stack }) => {
+const WorkItem = ({ year, title, role, duration, details, stack }) => {
   return (
     <ol className="flex flex-col md:flex-row relative border-l border-stone-200">
       <li className="mb-10 ml-4">
@@ -25,9 +25,9 @@ const WorkItem = ({ key, year, title, role, duration, details, stack }) => {
               Tech Stack:
             </span>
             <span className="ml-2">
-              {stack.split(",").map((tech) => (
+              {stack.split(",").map((tech, index) => (
                 <span
-                  key={tech.id}
+                  key={`${tech}-${index}`} // Use a unique key, such as tech combined with index
                   className="bg-gray-200 text-gray-800 px-2 py-1 rounded-md text-xs md:text-sm inline-block mr-2"
                 >
                   {tech.trim()}
@@ -42,7 +42,6 @@ const WorkItem = ({ key, year, title, role, duration, details, stack }) => {
 };
 
 WorkItem.propTypes = {
-  key: PropTypes.string.isRequired,
   stack: PropTypes.string,
   year: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,

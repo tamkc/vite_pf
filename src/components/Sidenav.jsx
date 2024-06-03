@@ -4,6 +4,7 @@ import {
   AiOutlineProject,
   AiOutlineMail,
   AiOutlineHome,
+  AiOutlineClose,
 } from "react-icons/ai";
 import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
@@ -17,10 +18,19 @@ const Sidenav = () => {
 
   return (
     <div>
-      <AiOutlineMenu
-        className="fixed top-4 right-4 z-[99] md:hidden"
-        onClick={handleNav}
-      />
+      {nav ? (
+        <AiOutlineClose
+          className="fixed top-4 right-4 z-[99] md:hidden cursor-pointer"
+          size={30}
+          onClick={handleNav}
+        />
+      ) : (
+        <AiOutlineMenu
+          className="fixed top-4 right-4 z-[99] md:hidden cursor-pointer"
+          size={30}
+          onClick={handleNav}
+        />
+      )}
 
       {nav ? (
         <div
