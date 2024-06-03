@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "./Projectitem";
 import odooPayroll from "../assets/odoo_payroll.png";
 import reactPayroll from "../assets/payroll_system.png";
-import property3Img from "../assets/react.svg";
+import object_rec from "../assets/object_rec.png";
 import property4Img from "../assets/react.svg";
 
 const Projects = () => {
@@ -27,7 +27,7 @@ const Projects = () => {
           title="Hr & Payroll Frontend"
           stack="React, NextJs, NodeJs"
         />
-        <ProjectItem img={property3Img} title="Project 3" />
+        <ProjectItem img={object_rec} title="Project 3" />
         <ProjectItem img={property4Img} title="Project 4" />
       </div>
     </div>
