@@ -27,12 +27,11 @@ const ProjectItem = ({ img, title, stack }) => {
   );
 };
 
-  function determineImageSize(imgUrl) {
-
-    const img = new Image();
-    img.src = img;
-    return Math.max(img.width, img.height);
-  }
+function determineImageSize(imgUrl) {
+  const img = new Image();
+  img.src = img;
+  return Math.max(img.width, img.height);
+}
 
 // Define propTypes
 ProjectItem.propTypes = {

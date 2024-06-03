@@ -1,19 +1,18 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import HongKongCity from "../assets/hongkongcity.webp";
 const Main = () => {
   return (
     <div id="main">
       <img
         className="w-full h-screen object-cover object-left transform scale-x-[-1]"
-        src="https://images.unsplash.com/photo-1620015092538-e33c665fc181?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src={HongKongCity}
         alt="A scenic view of Hong Kong"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
         <div className="flex flex-col justify-center items-center h-full font-bold">
           <h1 className="sm:text-5xl text-3xl font-bold text-gray-800">
-            {" "}
             I'm Peter Tam
           </h1>
           <h2 className="flex justify-center items-center text-2xl pt-4">
