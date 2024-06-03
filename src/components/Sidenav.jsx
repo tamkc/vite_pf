@@ -93,7 +93,7 @@ const Sidenav = () => {
             <AiOutlineProject size={25} />
           </a>
           <a
-            href="#main"
+            href="#work"
             className="rounded-full shadow-gray-400 bg-gray-100 p-4 m-2 hover:scale-110 ease-in duration-200 cursor-pointer shadow-md"
           >
             <BsPerson size={25} />
